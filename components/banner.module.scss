@@ -1,0 +1,19 @@
+.banner {
+  width: 100%;
+  border: 1px solid black;
+  font-size: 10px;
+
+  &.dark { 
+    background-color: #313d5a;
+    color: white;
+  }
+
+  &.light { 
+    background-color: #CBC5EA;
+    color: black;
+  }
+
+  @media only screen and (min-width: 415px) {
+    font-size: 16px;
+  }
+}
