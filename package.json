@@ -9,7 +9,7 @@
     "@apollo/client": "^3.7.4",
     "@plasmicapp/loader-nextjs": "^1.0.214",
     "graphql": "^16.6.0",
-    "next": "latest",
+    "next": "13.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.57.1"
