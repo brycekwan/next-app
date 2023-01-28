@@ -1,0 +1,44 @@
+.hero {
+  width: 100%;
+  background-color: lightgray;
+  height: 400px;
+  color: white;
+
+  &.light { 
+    color: white;
+  }
+
+  &.dark { 
+    color: black;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+
+    @media only screen and (min-width: 415px) {
+      top: 100px;
+      left: 100px;
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    right: 20px;
+
+    @media only screen and (min-width: 415px) {
+      top: 200px;
+      left: 100px;
+      right: 100px;
+    }
+  }
+}
