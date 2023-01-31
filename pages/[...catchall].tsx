@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
     // Using incremental static regeneration, will invalidate this page
     // after 300s (no deploy webhooks needed)
-    revalidate: 300
+    revalidate: 5
   };
 };
 
