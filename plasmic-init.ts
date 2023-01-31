@@ -6,6 +6,7 @@ import { Title } from "./components/title";
 import { PageBox } from "./components/page-box";
 import { ProductBox } from "./components/product-box";
 import { ProductTitle } from "./components/product-title";
+import { Accordion, AccordionSummary, AccordionDetails, Button } from '@mui/material';
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -90,5 +91,38 @@ PLASMIC.registerComponent(ProductTitle, {
   name: "Product Title",
   props: {
     className: "string",
+  },
+});
+
+PLASMIC.registerComponent(Button, {
+  name: "Material Button",
+  props: {
+    children: "slot",
+    variant: { 
+      type: "choice", 
+      options: ["contained", "outlined", "text", "string"]
+    }
+  },
+});
+
+PLASMIC.registerComponent(Accordion, {
+  name: "Material Accordion",
+  props: {
+    children: "slot",
+    defaultExpanded: "boolean"
+  },
+});
+
+PLASMIC.registerComponent(AccordionSummary, {
+  name: "Material Accordion Summary",
+  props: {
+    children: "slot",
+  },
+});
+
+PLASMIC.registerComponent(AccordionDetails, {
+  name: "Material Accordion Details",
+  props: {
+    children: "slot",
   },
 });
